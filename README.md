@@ -1,16 +1,14 @@
-# Keyboard Key Checker
+# Keyboard Checker
 
 ![Keyboard Key Checker](static/keyboard-checker.png)
 
-A web application that displays an 85-key keyboard layout with real-time key press detection. When you press physical keyboard keys, the corresponding keys on the screen highlight in red, and key information is displayed below.
+A web application that displays an keyboard layout with real-time key press detection. When you press physical keyboard keys, the corresponding keys on the screen highlight, and key information is displayed below.
 
 ## Features
 
-- Visual 85-key keyboard layout display
+- Visual keyboard layout display
 - Real-time key press detection
 - Display of key code, key name, and code value
-- Responsive design
-- Docker Compose support
 
 ## Setup
 
@@ -19,10 +17,6 @@ A web application that displays an 85-key keyboard layout with real-time key pre
 - Docker & Docker Compose
 
 ### Getting Started
-
-1. Clone/download the repository
-2. Navigate to the project directory
-3. Start the application
 
 ```bash
 # Build and start
