@@ -1,5 +1,7 @@
 # Keyboard Key Checker
 
+![Keyboard Key Checker](static/keyboard-checker.png)
+
 A web application that displays an 85-key keyboard layout with real-time key press detection. When you press physical keyboard keys, the corresponding keys on the screen highlight in red, and key information is displayed below.
 
 ## Features
