@@ -50,16 +50,3 @@ After accessing in your browser, press any keyboard key to see it highlighted on
 - **Backend**: Bun HTTP Server
 - **Containerization**: Docker & Docker Compose
 
-## Project Structure
-
-```
-keyboard-checker/
-├── index.html          # Keyboard layout and UI
-├── style.css           # Styling
-├── script.js           # Key detection logic
-├── server.ts           # Bun server
-├── package.json        # Project configuration
-├── Dockerfile          # Docker configuration
-├── docker-compose.yml  # Docker Compose configuration
-└── README.md
-```
