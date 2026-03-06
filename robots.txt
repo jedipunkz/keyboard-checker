@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jedipunkz.github.io/keyboard-checker/sitemap.xml
