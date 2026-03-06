@@ -31,6 +31,8 @@ class KeyboardChecker {
             this.highlightKey(code, true);
         }
 
+        this.toggleChecked(code);
+
         this.updateKeyInfo(keyCode, key, code);
     }
 
@@ -39,6 +41,13 @@ class KeyboardChecker {
 
         this.pressedKeys.delete(code);
         this.highlightKey(code, false);
+    }
+
+    toggleChecked(code) {
+        const keyElement = document.querySelector(`[data-code="${code}"]`);
+        if (keyElement) {
+            keyElement.classList.toggle('checked');
+        }
     }
 
     highlightKey(code, isPressed) {
@@ -63,10 +72,22 @@ class KeyboardChecker {
         const allKeys = document.querySelectorAll('.key.pressed');
         allKeys.forEach(key => key.classList.remove('pressed'));
     }
+
+    resetChecked() {
+        const allKeys = document.querySelectorAll('.key.checked');
+        allKeys.forEach(key => key.classList.remove('checked'));
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new KeyboardChecker();
+    window.keyboardChecker = new KeyboardChecker();
+
+    const resetButton = document.getElementById('reset-button');
+    if (resetButton) {
+        resetButton.addEventListener('click', () => {
+            window.keyboardChecker.resetChecked();
+        });
+    }
 });
 
 document.addEventListener('visibilitychange', () => {
